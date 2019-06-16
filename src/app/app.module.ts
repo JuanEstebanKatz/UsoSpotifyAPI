@@ -7,11 +7,18 @@ import { SearchComponent } from './components/search/search.component';
 import { ArtistaComponent } from './components/artista/artista.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import {ROUTES} from './app.routes';
-
+import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoadingComponent } from './components/loading/loading.component';
 
 //rutas de la aplicacion
 import { RouterModule } from '@angular/router';
+
+// PIPES
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
+
+
 
 
 
@@ -21,7 +28,11 @@ import { RouterModule } from '@angular/router';
     HomeComponent,
     SearchComponent,
     ArtistaComponent,
-    NavbarComponent
+    NavbarComponent,
+    NoimagePipe,
+    DomseguroPipe,
+    TarjetasComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
